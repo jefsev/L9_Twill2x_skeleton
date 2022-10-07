@@ -8,10 +8,12 @@
 
 #### Installation
 
+## 1.
+
 - Clone repository
-- Copy .env.example to .env
+- Copy .env.example to .env and changes as needed
 
-
+## 2.
 
 ```sh
 # Remove git remote origin and add remote origin of your project
@@ -35,10 +37,14 @@ php artisan migrate
 npm install
 ```
 
+## 3.
+
 ```sh
 # Watch for changes during development on localhost
 npm run dev
 ```
+
+## Build for production
 
 ```sh
 # Build production ready
