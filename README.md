@@ -8,21 +8,28 @@
 
 #### Installation
 
-##### 1.
-
-- Clone repository
-- Copy .env.example to .env and change as needed
-
-##### 2.
+##### Clone and setup
 
 ```sh
+# Clone this repository
+Clone repository
+
 # Remove git remote origin and add remote origin of your project
 git remote remove origin
 git remote add origin (REPO_URL)
+
+# Copy .env.example to .env and change as needed
+cp .env.example .env
 ```
+
+##### Install and migrate
 
 ```sh
 composer install
+```
+
+```sh
+npm install
 ```
 
 ```sh
@@ -33,11 +40,7 @@ php artisan key:generate
 php artisan migrate
 ```
 
-```sh
-npm install
-```
-
-##### 3.
+##### Update frontend during development
 
 ```sh
 # Watch for changes during development on localhost
