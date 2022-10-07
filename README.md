@@ -11,7 +11,7 @@
 ##### 1.
 
 - Clone repository
-- Copy .env.example to .env and changes as needed
+- Copy .env.example to .env and change as needed
 
 ##### 2.
 
