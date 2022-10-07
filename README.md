@@ -7,13 +7,15 @@
 
 #### Installation
 
-- Clone repository 
+<p>Clone repository</p>
 
 ```sh
 # Remove git remote origin and add remote origin of your project
 $ git remote remove origin
 $ git remote add origin (REPO_URL)
 ```
+
+<p>Copy .env.example to .env</p>
 
 ```sh
 $ composer install
