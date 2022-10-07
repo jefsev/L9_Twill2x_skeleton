@@ -41,6 +41,10 @@ php artisan key:generate
 ```
 
 ```sh
+php artisan storage:link
+```
+
+```sh
 # Setup twill admin and register a super admin, this will migrate the database.
 php artisan twill:install
 ```
