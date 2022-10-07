@@ -10,7 +10,8 @@
 
 - Clone repository
 - Copy .env.example to .env
-<br>
+
+
 
 ```sh
 # Remove git remote origin and add remote origin of your project
