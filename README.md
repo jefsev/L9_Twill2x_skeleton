@@ -6,6 +6,10 @@
 - npm / node.js
 - docker (optional)
 
+#### External docs:
+- [Laravel 9](https://laravel.com/docs/9.x/)
+- [Twill](https://twill.io/docs/)
+
 #### Installation
 
 ##### Clone and setup
@@ -37,7 +41,15 @@ php artisan key:generate
 ```
 
 ```sh
-php artisan migrate
+# Setup twill admin and register a super admin, this will migrate the database.
+php artisan twill:install
+```
+
+##### Development
+
+```sh
+# twill admin @
+http://localhost/admin
 ```
 
 ##### Update frontend during development
@@ -54,7 +66,21 @@ npm run dev
 npm run build
 ```
 
-#### External docs:
+#### Usefull commands
 
-- [Laravel 9](https://laravel.com/docs/9.x/)
-- [Twill](https://twill.io/docs/)
+```sh
+# Generate twill module named pages 
+# Docs: https://twill.io/docs/crud-modules/cli-generator.html
+php artisan twill:module pages
+```
+
+```sh
+# Generate twill block named example-banner
+# Docs: https://twill.io/docs/block-editor/creating-a-block-editor.html
+php artisan twill:make:block example-banner
+```
+
+```sh
+# Create a superadmin
+php artisan twill:superadmin
+```
