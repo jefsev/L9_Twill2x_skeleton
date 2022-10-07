@@ -9,7 +9,7 @@
 #### Installation
 
 - Clone repository
-- Copy <ins>.env.example</ins> to <ins>.env</ins>
+- Copy .env.example to .env
 <br>
 
 ```sh
