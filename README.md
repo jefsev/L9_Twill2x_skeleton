@@ -7,13 +7,39 @@
 
 #### Installation
 
-- Clone repository
-- Composer install
-- php artisan key:generate
-- php artisan migrate
-- npm install
-- (dev) npm run dev . watch changes in files an sync on localhost
-- (prod) npm run build
+- Clone repository 
+
+```sh
+# Remove git remote origin and add remote origin of your project
+$ git remote remove origin
+$ git remote add origin (REPO_URL)
+```
+
+```sh
+$ composer install
+```
+
+```sh
+$ php artisan key:generate
+```
+
+```sh
+$ php artisan migrate
+```
+
+```sh
+$ npm install
+```
+
+```sh
+# Watch for changes during development on localhost
+$ npm run dev
+```
+
+```sh
+# Build production ready
+$ npm run build
+```
 
 #### External docs:
 
