@@ -1,4 +1,4 @@
-## BKC Laravel 9 | Twill CMS package
+## Laravel 9 | Twill CMS package
 
 #### Environment Requirements
 - php >=8.1
