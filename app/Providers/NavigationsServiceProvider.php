@@ -26,7 +26,7 @@ class NavigationsServiceProvider extends ServiceProvider
     public function boot()
     {
         // Using Closure based composers...
-        View::composer('site.partials.navigation', function ($view) {
+        View::composer(['site.partials.navigation','site.partials.footer'], function ($view) {
             
             $view->with('menu', Menu::firstOrFail());
         });

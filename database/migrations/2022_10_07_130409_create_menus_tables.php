@@ -14,6 +14,7 @@ class CreateMenusTables extends Migration
             
             $table->string('title', 200)->nullable();
             $table->json('menu_link')->nullable();
+            $table->json('footer_widget')->nullable();
         
         });
     }
