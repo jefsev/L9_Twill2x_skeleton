@@ -2,7 +2,7 @@
 
 return [
     'menu' => [
-        'title' => 'Menu',
+        'title' => 'Menu & Footer',
         'route' => 'admin.menu',
     ],
 ];
