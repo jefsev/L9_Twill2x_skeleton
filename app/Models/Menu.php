@@ -13,11 +13,13 @@ class Menu extends Model
         'published',
         'title',
         'menu_link',
+        'footer_widget',
     ];
 
     protected $casts = [
-        'menu_link' => 'array'
+        'menu_link' => 'array',
+        'footer_widget' => 'array'
     ];
     
-    public $filesParams = ['web_logo'];
+    public $filesParams = ['web_logo','footer_logo'];
 }

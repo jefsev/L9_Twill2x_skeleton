@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use App\Models\Menu;
 
-class NavigationsProvider extends ServiceProvider
+class NavigationsServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -25,8 +25,10 @@ class NavigationsProvider extends ServiceProvider
      */
     public function boot()
     {
-        $menu = Menu::firstOrFail();
-
-        View::share('menu', $menu);
+        // Using Closure based composers...
+        View::composer(['site.partials.navigation','site.partials.footer'], function ($view) {
+            
+            $view->with('menu', Menu::firstOrFail());
+        });
     }
 }

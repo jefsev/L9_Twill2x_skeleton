@@ -14,6 +14,7 @@ class MenuRepository extends ModuleRepository
 
     protected $jsonRepeaters = [
         'menu_link',
+        'footer_widget'
     ];
 
     public function __construct(Menu $model)

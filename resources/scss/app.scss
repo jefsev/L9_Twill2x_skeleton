@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+$bg_grey: #F7F7F7;
+
+// Default styling
+.ql-align-right {
+    text-align: right;
+}
+
+// Include scss files
+
+@import 'partials/footer';
